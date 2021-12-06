@@ -1,0 +1,19 @@
+CREATE DATABASE Aptech;
+USE Aptech;
+
+CREATE TABLE Faulty
+(
+ID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+Name nvarchar(50),
+Designation nvarchar(50),
+No_of_batch nvarchar(10),
+Salary int
+);
+INSERT INTO Faulty VALUES('Laiba','xyz',1,23000);
+INSERT INTO Faulty VALUES('Ayesha','abc',2,24000);
+INSERT INTO Faulty VALUES('Umaima','zxc',3,25000);
+INSERT INTO Faulty VALUES('Zimal','vbn',4,26000);
+INSERT INTO Faulty VALUES('Rimsha','sfg',5,27000);
+
+SELECT * FROM Faulty;
+SELECT * FROM Faulty WHERE Salary>=26000;  
